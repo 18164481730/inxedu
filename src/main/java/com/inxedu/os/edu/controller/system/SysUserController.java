@@ -12,6 +12,8 @@ import com.inxedu.os.edu.entity.system.SysUserLoginLog;
 import com.inxedu.os.edu.service.system.SysRoleService;
 import com.inxedu.os.edu.service.system.SysUserLoginLogService;
 import com.inxedu.os.edu.service.system.SysUserService;
+import com.inxedu.os.util.StringUtil;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -226,7 +228,7 @@ public class SysUserController extends BaseController {
 	 */
 	private Map<String,Object> verifyUserData(SysUser sysuser) {
 		Map<String,Object> json = new HashMap<String,Object>();
-		if(sysuser.getLoginName()==null || sysuser.getLoginName().trim().equals("")){
+		if(StringUtil.isNull(sysuser.getLoginName())){
 			json = this.setJson(false, "请输入帐户号", null);
 			return json;
 		}else{
@@ -236,15 +238,15 @@ public class SysUserController extends BaseController {
 				return json;
 			}
 		}
-		if(sysuser.getLoginPwd()==null || !WebUtils.isPasswordAvailable(sysuser.getLoginPwd())){
+		if(StringUtil.isNull(sysuser.getLoginPwd()) || !WebUtils.isPasswordAvailable(sysuser.getLoginPwd())){
 			json = this.setJson(false, "密码错误，密码可由“_”，数字，英文大于等6位小于等于16位", null);
 			return json;
 		}
-		if(sysuser.getEmail()!=null && !sysuser.getEmail().trim().equals("") && !WebUtils.checkEmail(sysuser.getEmail(), 50)){
+		if(StringUtil.isNull(sysuser.getEmail()) && !WebUtils.checkEmail(sysuser.getEmail(), 50)){
 			json = this.setJson(false, "请输入正确的邮箱号", null);
 			return json;
 		}
-		if(sysuser.getTel()!=null && !sysuser.getTel().trim().equals("") && !WebUtils.checkMobile(sysuser.getTel())){
+		if(StringUtil.isNull(sysuser.getTel()) && !WebUtils.checkMobile(sysuser.getTel())){
 			json = this.setJson(false, "请输入正确的电话号码", null);
 			return json;
 		}
