@@ -37,14 +37,13 @@ public class CourseMsgController extends BaseController {
     public Map<String, Object> getTeacherList(HttpServletRequest request, @ModelAttribute("page") PageEntity page, int num){
         Map<String, Object> json=new HashMap<String, Object>();
         try {
-            Map<String,List<CourseDto>> courses = new HashedMap();
-            Map<Integer,String> map = new HashMap<>();
+            Map<String,List<CourseDto>> courses = new HashMap<String,List<CourseDto>>();
             courses = courseService.queryRecommenCourseList();
-            List cutCourses = new ArrayList();
+            List<CourseDto> cutCourses = new ArrayList<CourseDto>();
             cutCourses = courses.get("recommen_2");
 
             if(ObjectUtils.isNotNull(cutCourses)){
-                for (int i=0;cutCourses.size()>num;i++){
+                for(int i=0;cutCourses.size()>num;i++){
                     cutCourses.remove(cutCourses.size()-1);
                 }
                 json = this.setJson(true,"",cutCourses);
@@ -52,15 +51,13 @@ public class CourseMsgController extends BaseController {
             else{
                 json = this.setJson(true,"",null);
             }
-
-
-
         }catch (Exception e){
             json = this.setJson(false, "异常", null);
             logger.error("getTeacherList()--error",e);
         }
         return json;
     }
+    
     // 首页精品课程、最新课程、全部课程
     @RequestMapping("/typeCourse")
     @ResponseBody
