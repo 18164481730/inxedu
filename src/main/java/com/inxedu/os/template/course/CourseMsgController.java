@@ -1,12 +1,12 @@
 package com.inxedu.os.template.course;
 
-import com.inxedu.os.common.controller.BaseController;
-import com.inxedu.os.common.entity.PageEntity;
-import com.inxedu.os.common.util.ObjectUtils;
-import com.inxedu.os.edu.entity.course.CourseDto;
-import com.inxedu.os.edu.entity.course.QueryCourse;
-import com.inxedu.os.edu.service.course.CourseService;
-import org.apache.commons.collections.map.HashedMap;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import javax.servlet.http.HttpServletRequest;
+
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -14,11 +14,12 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import javax.servlet.http.HttpServletRequest;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import com.inxedu.os.common.controller.BaseController;
+import com.inxedu.os.common.entity.PageEntity;
+import com.inxedu.os.common.util.ObjectUtils;
+import com.inxedu.os.edu.entity.course.CourseDto;
+import com.inxedu.os.edu.entity.course.QueryCourse;
+import com.inxedu.os.edu.service.course.CourseService;
 
 /**
  * Created by Administrator on 2016/9/23.
