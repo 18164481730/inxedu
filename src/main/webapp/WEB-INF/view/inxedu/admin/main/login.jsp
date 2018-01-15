@@ -7,7 +7,7 @@
 <meta charset="utf-8" http-equiv="Content-Type" />
 <!-- End of Meta -->
 <!-- Page title -->
-<title>登录 -${websitemap.web.company}-${websitemap.web.title}</title>
+<title>登录</title>
 <!-- End of Page title -->
 <meta name="author" content="${websitemap.web.author}" />
 <meta name="keywords" content="${websitemap.web.keywords}" />
@@ -28,16 +28,14 @@
 <body>
 	<div id="container">
 		<div class="logo">
-			<a href="http://demo1.inxedu.com/" target="_blank" title="因酷在线教育软件 - 在线教育整体解决方案提供商">
-				<img src="${ctx}/static/admin/assets/logo.png" width="200" alt="因酷在线教育软件 - 在线教育整体解决方案提供商" />
-			</a>
+			<a><img src="${ctx}/static/admin/assets/logo.png" width="200" alt="" /></a>
 		</div>
 	</div>
 
 	<div class="b-box">
 		<div id="container">
 			<div id="box">
-				<h2>网校后台管理系统</h2>
+				<h2>后台管理系统</h2>
 				<form action="${ctx}/admin/main/login" method="POST" id="loginForm">
 					<p class="main">
 						<label>用户名: </label>
@@ -60,7 +58,6 @@
 			</div>
 			<div class="login-foot">
 				<span>
-					Powered By <a target="_blank" href="http://www.inxedu.com/" style="color: #666;">${websitemap.web.company}</a>
 				</span>
 			</div>
 		</div>

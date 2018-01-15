@@ -8,14 +8,14 @@
 <!-- End of Meta -->
 
 <!-- Page title -->
-<title>${websitemap.web.company}-${websitemap.web.title}</title>
+<title></title>
 <!-- End of Page title -->
 <meta name="author" content="${websitemap.web.author}" />
 <meta name="keywords" content="${websitemap.web.keywords}" />
 <meta name="description" content="${websitemap.web.description}" />
 <link rel="shortcut icon" href="${ctx}/favicon.ico" type="image/x-icon">
-	<link type="text/css" href="${ctx}/static/common/jerichotab/css/jquery.jerichotab.css" rel="stylesheet" />
-	<script type="text/javascript" src="${ctx}/static/common/jerichotab/js/jquery.jerichotab.js"></script>
+<link type="text/css" href="${ctx}/static/common/jerichotab/css/jquery.jerichotab.css" rel="stylesheet" />
+<script type="text/javascript" src="${ctx}/static/common/jerichotab/js/jquery.jerichotab.js"></script>
 <script type="text/javascript" src="${ctx}/static/admin/js/easyTooltip.js"></script>
 <script type="text/javascript" src="${ctx}/static/admin/js/jquery-ui-1.7.2.custom.min.js"></script>
 <script type="text/javascript" src="${ctx}/static/admin/js/jquery.wysiwyg.js"></script>
@@ -147,22 +147,10 @@
 </script>--%>
 </head>
 <body>
-<div class="Notice">
-	<div class="Noti-big pr">
-		<div class="not-warp" id="scroll_div">
-			<div id="" class="not-warp-in">
-				<div class="fsize12 f-fM p-txt" id="scroll_begin">
-					<tt class="fsize14 f-fM vam">【温馨提示】</tt>
-					<tt class="fsize14 f-fM vam">开源版本切勿商务哦！别辜负了我们善良的初衷，不然因酷小伙伴可是要暴躁的哟。更多功能欢迎购买商业版。</tt>
-				</div>
-				<div class="fsize12 f-fM p-txt" id="scroll_end"></div>
-			</div>
-		</div>
-		<a href="javascript: void(0)" title="关闭" class="not-close">
-			<img src="${ctx}/static/admin/images/close-gg.png">
-		</a>
+	<div id="scroll_div">
+		<div id="scroll_begin"></div>
+		<div id="scroll_end"></div>
 	</div>
-</div>
 	<!-- Container -->
 	<div class="tHeader headerimg">
 		<div>
@@ -173,9 +161,7 @@
 				<div id="top">
 					<!-- Logo -->
 					<div class="logo">
-						<a href="http://demo1.inxedu.com/" target="_blank" title="因酷在线教育软件 - 在线教育整体解决方案提供商" class="tooltip">
-							<img src="${ctx}/static/admin/assets/logo.png" height="60" alt="因酷在线教育软件 - 在线教育整体解决方案提供商" />
-						</a>
+						<img src="${ctx}/static/admin/assets/logo.png" height="60" alt="" />
 					</div>
 					<!-- End of Logo -->
 
@@ -192,7 +178,7 @@
 
 					<!-- Meta information -->
 					<div class="meta">
-						<p>欢迎来到${websitemap.web.company}后台管理系统!</p>
+						<p>欢迎来到后台管理系统!</p>
 						<ul>
 							<li>
 								<a href="${ctx}/admin/outlogin" title="退出系统" class="tooltip">
@@ -250,7 +236,6 @@
 	<div id="footer">
 		<p class="mid">${websitemap.web.copyright}</p>
 		<p class="mid">
-			Powered By <a target="_blank" href="http://demo1.inxedu.com/" style="color: #666;">${websitemap.web.company}</a>
 		</p>
 	</div>
 		<script type="text/javascript">

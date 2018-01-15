@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="utf-8" http-equiv="Content-Type" />
-<title>后台管理系统 - 因酷在线教育软件 - 在线教育整体解决方案提供商</title>
+<title>后台管理系统</title>
 <script type="text/javascript" src="${ctximg}/static/admin/js/highChart/highcharts.js"></script>
 <script type="text/javascript" src="${ctximg}/static/admin/js/highChart/highcharts-3d.js"></script>
 <script type="text/javascript" language="javascript">
