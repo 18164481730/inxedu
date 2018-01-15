@@ -1,4 +1,4 @@
-package com.inxedu.os.util;
+package com.inxedu.os.common.util;
 
 /**
  * 字符串处理工具类

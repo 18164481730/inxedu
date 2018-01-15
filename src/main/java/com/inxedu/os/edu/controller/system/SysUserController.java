@@ -4,6 +4,7 @@ import com.inxedu.os.common.controller.BaseController;
 import com.inxedu.os.common.entity.PageEntity;
 import com.inxedu.os.common.util.MD5;
 import com.inxedu.os.common.util.SingletonLoginUtils;
+import com.inxedu.os.common.util.StringUtil;
 import com.inxedu.os.common.util.WebUtils;
 import com.inxedu.os.edu.entity.system.QuerySysUser;
 import com.inxedu.os.edu.entity.system.SysRole;
@@ -12,7 +13,6 @@ import com.inxedu.os.edu.entity.system.SysUserLoginLog;
 import com.inxedu.os.edu.service.system.SysRoleService;
 import com.inxedu.os.edu.service.system.SysUserLoginLogService;
 import com.inxedu.os.edu.service.system.SysUserService;
-import com.inxedu.os.util.StringUtil;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
