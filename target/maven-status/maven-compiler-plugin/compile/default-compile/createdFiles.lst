@@ -91,6 +91,7 @@ com\inxedu\os\edu\service\course\CourseStudyhistoryService.class
 com\inxedu\os\edu\service\impl\course\CourseFavoritesServiceImpl.class
 com\inxedu\os\edu\service\impl\course\CourseKpointServiceImpl.class
 com\inxedu\os\edu\service\impl\questions\QuestionsTagRelationServiceImpl.class
+com\inxedu\os\util\StringUtil.class
 com\inxedu\os\edu\dao\website\WebsiteProfileDao.class
 com\inxedu\os\edu\dao\mobile\UserMobileMsgDao.class
 com\inxedu\os\edu\entity\course\CourseFavorites.class

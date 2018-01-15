@@ -70,7 +70,8 @@
 				</section>
 				<div class="js-wrap">
 					<section class="fr">
-						<span class="c-ccc"> <tt class="c-master f-fM">${page.currentPage}</tt>/<tt class="c-666 f-fM">${page.totalPageSize}</tt>
+						<span class="c-ccc"> 
+							<tt class="c-master f-fM">${page.currentPage}</tt>/<tt class="c-666 f-fM">${page.totalPageSize}</tt>
 						</span>
 					</section>
 					<section class="fl">

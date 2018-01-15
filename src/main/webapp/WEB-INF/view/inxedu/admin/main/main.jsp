@@ -240,7 +240,7 @@
 
 				<div id="ui-sMenu" class="ui-accordion ui-widget ui-helper-reset" style="height:760px;overflow-y: auto">
 				</div>
-
+			</div>
 		</div>
 		<!-- End of bgwrap -->
 	</div>

@@ -127,7 +127,6 @@
 				</tr>
 			</table>
 		</form>
-	</div>
 </fieldset>
 </body>
 </html>

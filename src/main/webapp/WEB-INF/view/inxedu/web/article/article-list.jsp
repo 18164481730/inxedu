@@ -44,7 +44,8 @@
 												</p>
 											</section>
 											<section class="hLh30 txtOf mt5 pr10 a-list-extrainfo">
-												<span class="fr"><tt class="c-999 f-fM">
+												<span class="fr">
+													<tt class="c-999 f-fM">
 														<!-- 1小时前发布 -->
 														<fmt:formatDate value="${article.publishTime }" pattern="yyyy-MM-dd HH:mm" />
 													</tt></span>

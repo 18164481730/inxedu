@@ -76,5 +76,6 @@
 				</p>
 			</form>
 		</div>
+	</fieldset>
 </body>
 </html>

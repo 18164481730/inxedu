@@ -63,7 +63,6 @@ function importExcel(){
 				</form>
 
 			</div>
-    </div>
 </fieldset>
 </body>
 </html>

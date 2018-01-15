@@ -50,8 +50,8 @@
 					<span class="field_desc">倒序</span>
 				</p>
 				<p>
-					<input type="button" value="提 交" class="button" onclick="updateSubmit()">
-						<input type="button" value="返 回" class="button" onclick="history.go(-1);">
+					<input type="button" value="提 交" class="button" onclick="updateSubmit()"/>
+					<input type="button" value="返 回" class="button" onclick="history.go(-1);"/>
 				</p>
 			</form>
 		</div>

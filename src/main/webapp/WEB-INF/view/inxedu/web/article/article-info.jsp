@@ -38,14 +38,17 @@
 							</h3>
 							<section class="hLh30 txtOf mt5 pb20 mreadnum">
 								<div class="fr">
-									<span> <a class="noter-dy vam" title="评论" href="#i-art-comment">
+									<span> 
+										<a class="noter-dy vam" title="评论" href="#i-art-comment">
 											<em class="icon18">&nbsp;</em>(<span class="totalResultComment">0</span>)
-										</a> <tt title="赞一下" onclick="addPraise('${article.articleId}',3)" class="noter-zan vam ml5 f-fM">
+										</a> 
+										<tt title="赞一下" onclick="addPraise('${article.articleId}',3)" class="noter-zan vam ml5 f-fM">
 											<em class="icon18">&nbsp;</em>(<span class="addPraise${article.articleId}_3 praiseCount">0</span>)
 										</tt>
 									</span>
 								</div>
-								<div class="fl pt3"><%--  <tt class="c-999 f-fM">来源：${article.source }</tt>  --%><tt class="c-999 f-fM">
+								<div class="fl pt3"><%--  <tt class="c-999 f-fM">来源：${article.source }</tt>  --%>
+								<tt class="c-999 f-fM">
 										<!-- 1小时前发布 -->
 										<fmt:formatDate value="${article.publishTime }" pattern="yyyy-MM-dd HH:mm" />
 								</tt>
@@ -55,9 +58,11 @@
 								<div>
 									<tt class="c-999 f-fM">
 										评论：<span class="totalResultComment">0</span>
-									</tt> <tt class="c-999 f-fM ml20">
+									</tt> 
+									<tt class="c-999 f-fM ml20">
 										点赞：<span class="addPraise${article.articleId}_3 praiseCount">0</span>
-									</tt> <tt class="c-999 f-fM ml20">
+									</tt> 
+									<tt class="c-999 f-fM ml20">
 										阅读：<span class="clickNum"></span>
 									</tt>
 								</div>

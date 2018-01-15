@@ -4,6 +4,7 @@
 <html>
 <head>
 <title>网站配置管理</title>
+</head>
 <body>
 	<form action="${ctx }/admin/websiteProfile/update" method="post" id="addprofileForm">
 		<input type="hidden" name="type" value="${type}" />
@@ -68,7 +69,6 @@
 						<input type="text" name="copyright" value="${webSiteMap.web.copyright}" style="width: 75%" class="lf" />
 						<span class="field_desc"></span>
 					</p>
-					</tbody>
 				</c:if>
 				<c:if test="${type=='censusCode'}">
 					<p>

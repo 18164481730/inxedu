@@ -70,15 +70,17 @@
 						<option value="TAB" <c:if test="${websiteNavigate.type=='TAB'}">selected="selected"</c:if>>尾部标签</option>
 					</select>
 				</p>
-				<tr>
-					<td align="center">
-						<font color="red">*</font>&nbsp;排序（由大到小显示）
-					</td>
-					<td>
-						<input type="text" name="websiteNavigate.orderNum" value="${websiteNavigate.orderNum}" class="{required:true,number:true}" value="0"
-							id="orderNum" />
-					</td>
-				</tr>
+				<table>
+					<tr>
+						<td align="center">
+							<font color="red">*</font>&nbsp;排序（由大到小显示）
+						</td>
+						<td>
+							<input type="text" name="websiteNavigate.orderNum" value="${websiteNavigate.orderNum}" class="{required:true,number:true}" value="0"
+								id="orderNum" />
+						</td>
+					</tr>
+				</table>
 				<p>
 					<input type="button" value="提 交" class="button" onclick="javascript:updateSubmit()" />
 					<input type="button" value="返 回" class="button" onclick="javascript:history.go(-1);" />

@@ -58,13 +58,12 @@
 						</section>
 						<section class="c-attr-mt c-attr-time">
 							<span class="c-fff fsize14">课程有效期：
-											<c:if test="${course.loseType==0 }">
-												<fmt:formatDate pattern="yyyy/MM/dd HH:mm"  value="${course.endTime}" />
-											</c:if>
-											<c:if test="${course.loseType==1 }">
-													从购买之日起${course.loseTime }天
-												</span>
-											</c:if>
+								<c:if test="${course.loseType==0 }">
+									<fmt:formatDate pattern="yyyy/MM/dd HH:mm"  value="${course.endTime}" />
+								</c:if>
+								<c:if test="${course.loseType==1 }">
+										从购买之日起${course.loseTime }天
+								</c:if>
 							</span>
 						</section>
 						<section class="c-attr-mt">
@@ -161,8 +160,7 @@
 																	<span class="fr"><em class="icon14 m-tree-icon">&nbsp;</em></span><em class="lh-menu-i-1 icon24 mr5"><font>${folderIndex }</font></em>${parentKpoint.name }</a>
 																<ol class="lh-menu-ol"  
 																	<c:if test="${index.first==true}">style="display: block;"</c:if>
-																	<c:if test="${index.first==false}">style="display: none;"</c:if>
-																>
+																	<c:if test="${index.first==false}">style="display: none;"</c:if>>
 																	<c:forEach items="${parentKpoint.kpointList}" var="sonKpoint">
 																		<li class="lh-menu-second ml30"><a href="javascript:void(0)" <%-- onclick="playVideo('${sonKpoint.videoUrl }',this)" --%> onclick="getPlayerHtml(${sonKpoint.kpointId },${sonKpoint.free },this)" title="">
 																				<span class="fr"> 

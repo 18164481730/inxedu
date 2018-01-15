@@ -25,17 +25,21 @@
 						</section> --%>
 						<section class="hLh30 txtOf mt5">
 							<div class="fr">
-								<span> <a class="noter-dy vam" title="回答" href="${ctx }/front/articleinfo/${article.articleId}.html">
+								<span> 
+									<a class="noter-dy vam" title="回答" href="${ctx }/front/articleinfo/${article.articleId}.html">
 										<em class="icon18">&nbsp;</em>(${article.commentNum })
-									</a> <tt title="赞一下" class="noter-zan vam ml10 f-fM" onclick="addPraise('${article.articleId}',3)">
+									</a> 
+									<tt title="赞一下" class="noter-zan vam ml10 f-fM" onclick="addPraise('${article.articleId}',3)">
 										<em class="icon18">&nbsp;</em>(<span class="addPraise${article.articleId}_3 praiseCount">${article.praiseCount }</span>)
 									</tt>
 								</span>
 							</div>
-							<span class="fl"><tt class="c-999 f-fM">
+							<span class="fl">
+								<tt class="c-999 f-fM">
 									<!-- 1小时前发布 -->
 									<fmt:formatDate value="${article.publishTime }" pattern="yyyy-MM-dd HH:mm" />
-								</tt></span>
+								</tt>
+							</span>
 						</section>
 					</li>
 				</c:forEach>

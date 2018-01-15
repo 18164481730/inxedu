@@ -12,8 +12,7 @@
 						><span class="fr"><em class="icon14 m-tree-icon">&nbsp;</em></span><em class="lh-menu-i-1 icon24 mr5"><font>${folderIndex }</font></em>${parentKpoint.name }</a>
 						<ol class="lh-menu-ol"
 							<c:if test="${index.first==true}">style="display: block;"</c:if>
-							<c:if test="${index.first==false}">style="display: none;"</c:if>
-						>
+							<c:if test="${index.first==false}">style="display: none;"</c:if>>
 							<c:forEach items="${parentKpoint.kpointList}" var="sonKpoint">
 								<li class="lh-menu-second ml30">
 									<a href="javascript:void(0)" onclick="getPlayerHtml(${sonKpoint.kpointId },'${sonKpoint.name }',this)" class="" title="">

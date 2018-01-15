@@ -16,7 +16,7 @@
 
 <script type="text/javascript">
 	subjectList='${subjectList}'
-	</script>
+</script>
 </head>
 <body>
 <fieldset>
@@ -103,5 +103,6 @@
 			</table>
 		</form>
 	</div>
+</fieldset>
 </body>
 </html>

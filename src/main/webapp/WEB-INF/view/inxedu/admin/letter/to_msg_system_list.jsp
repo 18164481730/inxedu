@@ -93,7 +93,7 @@
 
             <input type="button" class="button tooltip" value="查询" name="" onclick="submitSearch()"/>
             <input type="button" class="button tooltip" value="清空" name="" onclick="clean()"/>
-            <input type="button" class="btn btn-danger" onclick="deleteBatch();" value="批量删除">
+            <input type="button" class="btn btn-danger" onclick="deleteBatch();" value="批量删除"/>
             <table cellspacing="0" cellpadding="0" border="0" class="fullwidth" width="100%">
                 <thead>
                 <tr>
