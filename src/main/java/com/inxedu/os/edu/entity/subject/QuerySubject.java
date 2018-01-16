@@ -8,7 +8,7 @@ import java.util.Date;
 
 /**
  * @author www.inxedu.com
- *
+ * @EqualsAndHashCode 此注解会生成equals和hashcode方法
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
